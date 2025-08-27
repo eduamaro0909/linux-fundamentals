@@ -40,6 +40,22 @@ This document contains the **training syllabus** and the **hands-on labs** for C
 
 ## 🧪 Hands-on Labs
 
+### Initial Setup: Installing Linux and Manual Partitioning
+**Scenario:** Cristopher must install Linux from scratch and configure disk partitions manually.  
+
+**Tasks:**
+1. Download an ISO image of Ubuntu Server (or CentOS/RHEL).
+2. Create a virtual machine in VirtualBox/VMware with at least 2 vCPU, 4GB RAM, and a 20GB virtual disk.
+3. During installation, manually create the following partitions:
+   - `/boot` → 1GB (ext4)
+   - `swap` → 4GB
+   - `/` (root) → 10GB (ext4)
+   - `/home` → remaining space (ext4)
+4. Complete the OS installation and verify partitions with `lsblk` and `df -h`.
+5. Install OpenSSH server and ensure remote access is enabled.
+
+---
+
 ### Week 1-2: Fundamentals + Users/Permissions + Processes and Services
 **Scenario:** The freshly installed Linux server has access and permissions issues.  
 
